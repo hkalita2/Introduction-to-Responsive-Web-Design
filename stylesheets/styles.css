@@ -85,9 +85,11 @@ h6 { font-size: 1.2em; }
 
 /*================================ */
 
-.container {
+.site-container {
 	padding-top: 4em;
 	margin-bottom: 2em;
+	display: block;
+	clear: both;
 	}
 
 /* main navigation */
