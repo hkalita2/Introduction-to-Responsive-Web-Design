@@ -48,11 +48,6 @@ p a, p a:visited {
 	line-height: inherit; 
 	}
 
-/* Reset for strange margins by default on <figure> elements */
-figure { 
-	margin: 0; 
-	}
-
 /* Base Type Styles Using Modular Scale ---------------------- */
 p { 
 	font-family: inherit; 
@@ -62,8 +57,6 @@ p {
 	margin-bottom: 1.6em; }
 
 h1, h2, h3, h4, h5, h6 { 
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
-	font-style: normal; 
 	color: #222222; 
 	text-rendering: optimizeLegibility; 
 	line-height: 1.1; 
@@ -88,8 +81,6 @@ h6 { font-size: 1.2em; }
 .site-container {
 	padding-top: 4em;
 	margin-bottom: 2em;
-	display: block;
-	clear: both;
 	}
 
 /* main navigation */
@@ -209,6 +200,12 @@ h6 { font-size: 1.2em; }
 	-webkit-border-radius: 4px;
 	-o-border-radius:4px;
 	border-radius:4px;
+	}
+.more-activities {
+	border-top: 1px solid #ccc;
+	margin-bottom: 2em;
+	padding: 1.6em 0;
+	text-align: center;
 	}
 .footer {
 	clear:both;
