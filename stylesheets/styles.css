@@ -19,7 +19,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-img {
+img, video, iframe {
 	max-width: 100%;
 	height: auto;
 	}
@@ -109,7 +109,7 @@ h3 { font-size: 2.5rem; }
     top: 0;
     width: 100%;
     z-index: 10000;
-    padding: 1.2rem 0.7rem 0 0.7rem;
+    padding: 0.7rem 0.7rem 0 0.7rem;
 }
 .nav ul {
 	margin: 0;
@@ -236,10 +236,13 @@ h3 { font-size: 2.5rem; }
 }
 #mobile-nav a {
 	display: block;
-	height: 20px;
+	height: 40px;
 	color: #FFF;
 	padding: 10px 0;
 	text-transform: uppercase;
+}
+#mobile-nav a:hover {
+	background: #3ebbe0;
 }
 .mobile-nav-wrapper, .anchor-link {display: none;}
 
@@ -266,12 +269,12 @@ h3 { font-size: 2.5rem; }
 	}
 }
 
-/* Addresses most small tablets */
+/* Addresses most small tablets and large smart phones*/
 @media screen and (max-width: 768px) {
-	.container_12 .grid_6, .container_12 .push_4, .container_12 .pull_8 {
+	.container_12 .grid_6, .container_12 .push_4, .container_12 .pull_8, .container_12 .push_4 {
 		float: none;
 	}
-	.container_12 .push_4 {
+	.container_12 .push_4, .container_12 .pull_8 {
 		left: 0;
 	}
 	.container_12 {
@@ -320,7 +323,7 @@ h3 { font-size: 2.5rem; }
 	.preface .grid_4, .preface .grid_8, .container_12 .grid_3, .container_12 .grid_8, .left {
 		float: none;
 	}
-	
+
 	.preface {
 		text-align: center;
 	}
@@ -337,52 +340,9 @@ h3 { font-size: 2.5rem; }
 		text-align: center;
 		overflow: hidden;
 	}
-
-/* Main Navigation 
-	.mobile-nav {display: none;}*/
-	.nav {
-		position: fixed;
-		text-align: center;
-		top: 0;
-		z-index: 10000;
-		min-height: 4rem;
-	}	
-	.nav ul {
-		width: 15rem;
-		padding: 0 0 5px 0;
-		position: absolute;
-		top: .5rem;
-		left: 1rem;
-		border-radius: 4px;
-		}
-	.nav li {
-		display: none; /* hide all <li> itrems */
-		margin: 0;
+	/* Main Navigation */
+	.anchor-link {display: block; float: left;clear: both;}
+	.nav .anchor-link:hover {background: none;color: #2ba6cb;}
+	.nav ul {display: none;
 	}
-	.nav .active {
-		display: block; /* show only active <li> item */
-	}
-	.nav a {
-		display: block;
-		padding: 5px 5px 5px 32px;
-		text-align: left;
-		}
-	.nav a:hover {color: #fff;}
-	.nav .active a {
-		background: none;
-		color: #ededed;
-	}
-
-	/* on nav hover */
-	.nav ul:hover, .nav ul:focus {
-		background:#383838;
-	}
-	.nav ul:hover li {
-		display: block;
-		margin: 0 0 5px;
-	}
-
-	.nav a:hover, .nav .active a {
-	background: none;
-}
 }
