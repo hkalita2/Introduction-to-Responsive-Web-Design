@@ -11,9 +11,9 @@
 .container_12,
 .container_16
 {
-	width: 92%;
-	margin-left: 4%;
-	margin-right: 4%;
+	width: 98%;
+	max-width: 980px;
+	margin: auto;
 }
 
 /* =Grid >> Global
@@ -42,12 +42,20 @@
 	margin-right: 1%;
 }
 
+.push_3, .pull_9, .push_4, .pull_8 {
+	position: relative;
+}
 .container_12 .grid_3,
 .container_16 .grid_4
 {
 	width: 23%;
 }
-
+.container_12 .push_3 {
+	left: 25%;
+}
+.container_12 .push_4 {
+	left: 33.333%;
+}
 .container_12 .grid_6,
 .container_16 .grid_8
 {
@@ -59,7 +67,12 @@
 {
 	width: 73%;
 }
-
+.container_12 .pull_9 {
+	left: -75%;
+}
+.container_12 .pull_8 {
+	left: -66.666%;
+}
 .container_12 .grid_12,
 .container_16 .grid_16
 {
