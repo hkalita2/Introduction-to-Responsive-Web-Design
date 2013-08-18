@@ -1,4 +1,7 @@
-/* line 7, ../sass/styles.scss */
+// Requires: normalize.css 
+
+// Global Reset & Standards 
+@import 'compass/css3';
 *,
 *:before,
 *:after {
@@ -6,12 +9,10 @@
   box-sizing: border-box;
 }
 
-/* line 12, ../sass/styles.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 16, ../sass/styles.scss */
 body {
   background: #FFF;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -23,7 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 29, ../sass/styles.scss */
 img,
 video,
 iframe {
@@ -32,7 +32,6 @@ iframe {
 }
 
 /* Image replacement technique */
-/* line 35, ../sass/styles.scss */
 .ir {
   border: 0;
   font: 0/0 a;
@@ -40,37 +39,31 @@ iframe {
   color: transparent;
   background-color: transparent;
 }
-
 /* Links ---------------------- */
-/* line 44, ../sass/styles.scss */
+
 a img {
   border: none;
 }
 
-/* line 48, ../sass/styles.scss */
 a {
   color: #2ba6cb;
   text-decoration: none;
 }
 
-/* line 53, ../sass/styles.scss */
 a:hover {
   color: #2795b6;
 }
 
-/* line 57, ../sass/styles.scss */
 a:focus {
   color: #2ba6cb;
   outline: none;
 }
 
-/* line 63, ../sass/styles.scss */
 p a,
 p a:visited {
   line-height: inherit;
 }
 
-/* line 67, ../sass/styles.scss */
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -80,14 +73,12 @@ p a:visited {
   clear: both;
 }
 
-/* line 76, ../sass/styles.scss */
 .left {
   margin-right: 12px;
   margin-bottom: 10px;
   float: left;
 }
 
-/* line 82, ../sass/styles.scss */
 .right {
   margin-left: 12px;
   margin-bottom: 10px;
@@ -95,14 +86,13 @@ p a:visited {
 }
 
 /* Base Type Styles Using Modular Scale ---------------------- */
-/* line 90, ../sass/styles.scss */
+
 p {
   font-family: inherit;
   font-weight: normal;
   margin-bottom: 1.6rem;
 }
 
-/* line 101, ../sass/styles.scss */
 h1,
 h2,
 h3,
@@ -117,35 +107,30 @@ h6 {
   font-family: 'Open Sans',sans-serif;
 }
 
-/* line 110, ../sass/styles.scss */
 h1 {
   font-size: 3.8rem;
 }
 
-/* line 114, ../sass/styles.scss */
 h2 {
   font-size: 2.8rem;
 }
 
-/* line 118, ../sass/styles.scss */
 h3 {
   font-size: 2.5rem;
 }
 
 /*================================ */
-/* line 124, ../sass/styles.scss */
+
 .container {
   margin-bottom: 2rem;
 }
 
-/* line 128, ../sass/styles.scss */
 .sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 134, ../sass/styles.scss */
 .sidebar ul li {
   display: block;
   border-bottom: 1px solid #ededed;
@@ -153,7 +138,7 @@ h3 {
 }
 
 /* main navigation */
-/* line 142, ../sass/styles.scss */
+
 .nav {
   background-color: #282828;
   cursor: default;
@@ -166,13 +151,11 @@ h3 {
   padding: 0.7rem 0.7rem 0 0.7rem;
 }
 
-/* line 154, ../sass/styles.scss */
 .nav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 159, ../sass/styles.scss */
 .nav li {
   margin: 0 5px 10px 0;
   padding: 0;
@@ -180,7 +163,6 @@ h3 {
   display: inline-block;
 }
 
-/* line 166, ../sass/styles.scss */
 .nav a {
   font-size: 1.6rem;
   font-family: Helvetica;
@@ -190,7 +172,6 @@ h3 {
   letter-spacing: .05rem;
 }
 
-/* line 176, ../sass/styles.scss */
 .nav a:hover,
 .nav .active a {
   background: #3EBBE0;
@@ -198,7 +179,6 @@ h3 {
   border-radius: 5px;
 }
 
-/* line 182, ../sass/styles.scss */
 .preface {
   background: #EDEDED;
   margin: 0 auto 3rem auto;
@@ -211,7 +191,6 @@ h3 {
   border: 1px solid #D7D7D7;
 }
 
-/* line 195, ../sass/styles.scss */
 .preface h1,
 .preface p {
   font-family: 'Open Sans',sans-serif;
@@ -220,7 +199,6 @@ h3 {
   text-shadow: 1px 1px #FFF;
 }
 
-/* line 202, ../sass/styles.scss */
 .preface p {
   font-size: 1.8rem;
   font-family: Georgia, 'Times New Roman', sans-serif;
@@ -229,12 +207,10 @@ h3 {
   line-height: 1.6;
 }
 
-/* line 210, ../sass/styles.scss */
 .preface .hero {
   text-align: right;
 }
 
-/* line 214, ../sass/styles.scss */
 .hero img {
   max-width: 85%;
   -o-border-radius: 50%;
@@ -242,12 +218,11 @@ h3 {
 }
 
 /* activities */
-/* line 222, ../sass/styles.scss */
+
 .activities {
   margin-bottom: 2rem;
 }
 
-/* line 226, ../sass/styles.scss */
 .activities h4 {
   font-size: 1.3rem;
   color: #666;
@@ -255,7 +230,6 @@ h3 {
   text-shadow: 1px 1px #fff;
 }
 
-/* line 233, ../sass/styles.scss */
 .activities .intro {
   text-align: center;
   font-size: 1.8rem;
@@ -263,17 +237,14 @@ h3 {
   margin-top: 0;
 }
 
-/* line 240, ../sass/styles.scss */
 .activities .grid_4 p {
   text-align: left;
 }
 
-/* line 244, ../sass/styles.scss */
 .intro {
   margin-bottom: 2rem;
 }
 
-/* line 248, ../sass/styles.scss */
 .button {
   color: #fff;
   text-align: center;
@@ -294,7 +265,6 @@ h3 {
     background-color: rgb(78,169,244);*/
 }
 
-/* line 268, ../sass/styles.scss */
 .more-activities {
   border-top: 1px solid #EDEDED;
   margin-bottom: 2rem;
@@ -302,7 +272,6 @@ h3 {
   text-align: center;
 }
 
-/* line 276, ../sass/styles.scss */
 .footer,
 .mobile-nav-wrapper {
   clear: both;
@@ -312,19 +281,16 @@ h3 {
   color: #fff;
 }
 
-/* line 284, ../sass/styles.scss */
 .footer .usergroup {
   text-align: right;
 }
 
-/* line 288, ../sass/styles.scss */
 .mobile-nav-wrapper {
   padding: 0;
   background: #2ba6cb;
   text-align: center;
 }
 
-/* line 294, ../sass/styles.scss */
 #mobile-nav ul {
   list-style: none;
   margin: 0;
@@ -333,14 +299,12 @@ h3 {
   width: 100%;
 }
 
-/* line 302, ../sass/styles.scss */
 #mobile-nav li {
   display: block;
   height: 40px;
   border-bottom: 1px solid #59c8ea;
 }
 
-/* line 308, ../sass/styles.scss */
 #mobile-nav a {
   display: block;
   height: 40px;
@@ -349,18 +313,15 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 316, ../sass/styles.scss */
 #mobile-nav a:hover {
   background: #3ebbe0;
 }
 
-/* line 321, ../sass/styles.scss */
 .mobile-nav-wrapper,
 .anchor-link {
   display: none;
 }
 
-/* line 325, ../sass/styles.scss */
 .more-articles {
   margin-top: 20px;
   padding-top: 10px;
@@ -368,27 +329,27 @@ h3 {
 }
 
 /* Start of media queries to addres mobile devices */
+
 /* Addresses most tablets */
+
 @media screen and (max-width: 960px) {
-  /* line 336, ../sass/styles.scss */
   h1 {
     font-size: 3.2rem;
   }
 
-  /* line 341, ../sass/styles.scss */
   .preface p,
   .activities p.intro {
     font-size: 1.6rem;
   }
 
-  /* line 345, ../sass/styles.scss */
   .activities h3 {
     font-size: 2rem;
   }
 }
+
 /* Addresses most small tablets and large smart phones*/
+
 @media screen and (max-width: 768px) {
-  /* line 356, ../sass/styles.scss */
   .container_12 .grid_6,
   .container_12 .push_4,
   .container_12 .pull_8,
@@ -396,59 +357,48 @@ h3 {
     float: none;
   }
 
-  /* line 361, ../sass/styles.scss */
   .container_12 .push_4,
   .container_12 .pull_8 {
     left: 0;
   }
 
-  /* line 365, ../sass/styles.scss */
   .container_12 {
     width: 98%;
     margin: auto;
   }
 
-  /* line 370, ../sass/styles.scss */
   nav a {
     padding: .4rem 1rem;
   }
 
-  /* line 374, ../sass/styles.scss */
   h1 {
     font-size: 2rem;
   }
 
-  /* line 378, ../sass/styles.scss */
   .hero img {
     width: 100%;
   }
 
-  /* line 382, ../sass/styles.scss */
   .preface p {
     font-size: 1.5rem;
   }
 
-  /* line 386, ../sass/styles.scss */
   h2 {
     font-size: 2.2rem;
   }
 
-  /* line 390, ../sass/styles.scss */
   .activities p.intro {
     text-align: left;
   }
 
-  /* line 394, ../sass/styles.scss */
   .activities h3 {
     font-size: 1.8rem;
   }
 
-  /* line 398, ../sass/styles.scss */
   .button {
     padding: .5rem 2rem;
   }
 
-  /* line 402, ../sass/styles.scss */
   .activities .grid_4 {
     display: block;
     float: none;
@@ -460,14 +410,14 @@ h3 {
     text-align: center;
   }
 }
+
 /* Addresses most smart phones */
+
 @media screen and (max-width: 480px) {
-  /* line 417, ../sass/styles.scss */
   .mobile-nav-wrapper {
     display: block;
   }
 
-  /* line 425, ../sass/styles.scss */
   .preface .grid_4,
   .preface .grid_8,
   .container_12 .grid_3,
@@ -476,22 +426,18 @@ h3 {
     float: none;
   }
 
-  /* line 429, ../sass/styles.scss */
   .preface {
     text-align: center;
   }
 
-  /* line 433, ../sass/styles.scss */
   h2 {
     font-size: 1.8rem;
   }
 
-  /* line 437, ../sass/styles.scss */
   .activities p.intro {
     font-size: 1.4rem;
   }
 
-  /* line 441, ../sass/styles.scss */
   .footer .grid_6 {
     display: block;
     float: none;
@@ -501,20 +447,18 @@ h3 {
   }
 
   /* Main Navigation */
-  /* line 451, ../sass/styles.scss */
+
   .anchor-link {
     display: block;
     float: left;
     clear: both;
   }
 
-  /* line 457, ../sass/styles.scss */
   .nav .anchor-link:hover {
     background: none;
     color: #2ba6cb;
   }
 
-  /* line 462, ../sass/styles.scss */
   .nav ul {
     display: none;
   }
